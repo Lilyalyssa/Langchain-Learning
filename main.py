@@ -60,6 +60,15 @@ def guess(state: State) -> State:
     # add_messages
     return {"messages": [resp]}
 
+<<<<<<< HEAD
+# 解析文本中的数字，返回类型为int型
+def parse_digit(text: str) -> Optional[int]:
+    # 找到文本中0-9的第一个数字
+    m = re.search(r"[0-9]", text)
+    return int(m.group()) if m else None
+
+=======
+>>>>>>> 473f9c5c1fccb579976262657affe2d984f60977
 # 评估节点：解析模型输出并给出反馈或结束
 @traceable
 def evaluate(state: State) -> State:
